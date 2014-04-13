@@ -15,3 +15,11 @@ You can extract it or let run_analysis.R extract it.
 * Uses descriptive activity names to name the activities in the data set.
 * Appropriately labels the data set with descriptive activity names.
 * Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+### activity.subject.averages.txt
+The output file: 180 observations of 65 variables.
+
+### CodeBook.md
+Describes the variables, the data, 
+and any transformations or work that were performed to 
+clean up the data.
