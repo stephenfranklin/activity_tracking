@@ -1,12 +1,13 @@
 # activity_tracking
-=================
+-------------------
 
-## Examining a study: Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.
+### Examining a study: Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.
 
 ### The raw data is located here:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
 Put that .zip in your working directory.
-You can extract it or let run_analysis extract it.
+You can extract it or let run_analysis.R extract it.
 
 ### run_analysis.R
 * Merges the training and the test sets to create one data set.
