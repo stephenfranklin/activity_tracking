@@ -143,10 +143,8 @@ levels(Mean_Std$activity)   # goood.
 
 # Create a second, independent tidy data set with the average 
 #   of each variable for each activity and each subject.
-ms999<-Mean_Std[1:999,]
-View(ms999)
-s<-split(ms999, list(ms999$activity,ms999$subject), drop=TRUE)
+s<-split(Mean_Std, list(Mean_Std$activity,Mean_Std$subject), drop=TRUE)
 str(s,1)
-letsee2<-t(sapply(s, function(x) colMeans(x[, 3:68])))
-dim(letsee2)
-View(letsee2)
+Averages<-data.frame(t(sapply(s, function(x) colMeans(x[, 3:68]))))
+    ## t() is transpose.
+View(Averages)
