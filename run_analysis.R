@@ -148,3 +148,7 @@ str(s,1)
 Averages<-data.frame(t(sapply(s, function(x) colMeans(x[, 3:68]))))
     ## t() is transpose.
 View(Averages)
+
+# write out Averages:
+fileout <- paste(getwd(),"/activity.subject.averages.txt", sep="")
+write.table(Averages, file=fileout, sep=" ")
