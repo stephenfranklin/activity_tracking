@@ -1,19 +1,28 @@
 # gc_assignment.R 
 rm(list = ls())
-setwd("/Users/s/coursera/ds1_get_clean_data/gc_assn/UCI_HAR_Dataset/")
 library(plyr)
+
+###--> Be sure to change your working directory here:
+setwd("/Users/s/git_folder/datascience/getclean/activity_tracking/")
+
+# Here are the data for the project:
+# https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+###--> Download and place the "UCI HAR Dataset" zip or directory 
+###    within your working directory.
+if(!file.exists("UCI HAR Dataset")){
+    cat(sprintf("The dataset isn't unzipped\n"))
+     if(file.exists("getdata_projectfiles_UCI HAR Dataset.zip")){
+         str(sprintf("I'm unzipping the dataset.\n"))
+         unzip("getdata_projectfiles_UCI HAR Dataset.zip") 
+     } else str(sprintf("The dataset zipfile isn't here.\n"))
+} else cat(sprintf("Good, the dataset is here.\n"))
 
 # A full description is available at the site where the data
 # was obtained:
-# 
 # http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 # 
-# Here are the data for the project:
-# https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-# That data is locally stored in the working directory as:
-# getdata_projectfiles_UCI_HAR_Dataset.zip
 
-# You should create one R script called run_analysis.R that does the following: 
+# Create one R script called run_analysis.R that does the following: 
 # 1 Merges the training and the test sets to create one data set. 
 # 2 Extracts only the measurements on the mean and standard deviation 
 #   for each measurement. 
@@ -23,8 +32,9 @@ library(plyr)
 # 5 Creates a second, independent tidy data set with the average 
 #   of each variable for each activity and each subject.
 
-unzip("getdata_projectfiles_UCI_HAR_Dataset.zip") 
-## I've now changed the working directory to this:
+#unzip("getdata_projectfiles_UCI_HAR_Dataset.zip") 
+
+## I've changed the working directory to this:
 # The unzipped directory is: "UCI_HAR_Dataset"
 ## I put in the [_]s.
 # Within that are many files which are explained by the README.
