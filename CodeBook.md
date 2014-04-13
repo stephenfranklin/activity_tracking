@@ -23,22 +23,22 @@ These activities were measured and 561 features were computed and included
 in the raw data.  The features have names such as:
 "tBodyAcc-std()-X", "tBodyAcc-energy()-Y", "tBodyAccJerk-correlation()-Y,Z",
 etc.
-Of which, 65 features computing the mean or the standard deviation 
- were included in this analysis. Such features include::
+Of which, 65 features computing the mean or the standard deviation
+ were included in this analysis. Such features include:
 "tBodyGyro-mean()-X", "tBodyGyroJerk-std()-Y", "tBodyAccJerkMag-std()", etc.
 
 ### Data
-In the Samsung Galaxy S II, there are two sensors of note, 
-an accelerometer in 3 axes, 
+In the Samsung Galaxy S II, there are two sensors of note,
+an accelerometer in 3 axes,
 and an angular velocity sensor (or rate sensor, or "gyro") in 3 axes.
 We can consider the two together as 6 axes.
-By separating the data points by different sampling rates, 
+By separating the data points by different sampling rates,
 many different movements can be computed.
 In this analysis, only the mean and the standard deviation of all 6 axes
  were included.
 
-Each subject performed each activity for a period of time 
-in which about 30 measurements were taken.
+Each subject performed each activity for a period of time
+ in which about 30 measurements were taken.
 
 There are 7352 observations in the training set,
 and 2947 observations in the test set.

@@ -5,7 +5,6 @@
 
 ### The raw data is located here:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-
 Put that .zip in your working directory.
 You can extract it or let run_analysis.R extract it.
 
